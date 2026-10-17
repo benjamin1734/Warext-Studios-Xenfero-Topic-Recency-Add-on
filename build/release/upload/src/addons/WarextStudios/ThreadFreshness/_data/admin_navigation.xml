@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<admin_navigation>
-  <admin_navigation_entry navigation_id="wrxtThreadFreshness" display_order="9010" link="" icon="fa-heart-pulse" debug_only="0" development_only="0" hide_no_children="0" />
-  <admin_navigation_entry navigation_id="wrxtThreadFreshnessDashboard" parent_navigation_id="wrxtThreadFreshness" display_order="10" link="thread-freshness" debug_only="0" development_only="0" hide_no_children="0" />
-  <admin_navigation_entry navigation_id="wrxtThreadFreshnessForums" parent_navigation_id="wrxtThreadFreshness" display_order="20" link="thread-freshness/forums" admin_permission_id="node" debug_only="0" development_only="0" hide_no_children="0" />
-  <admin_navigation_entry navigation_id="wrxtThreadFreshnessSettings" parent_navigation_id="wrxtThreadFreshness" display_order="30" link="thread-freshness/settings" admin_permission_id="option" debug_only="0" development_only="0" hide_no_children="0" />
-</admin_navigation>

@@ -1,3 +1,8 @@
+## 1.2.4 - 2026-10-17
+
+- Corrected XenForo minimum version wording; version checks no longer depend on hard-coded release numbers.
+- Removed obsolete tracked build/release staging files (current packages are generated from upload/).
+
 ## 1.2.3 - 2026-09-27
 
 ### English

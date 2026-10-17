@@ -31,7 +31,9 @@ foreach ($required as $file)
 }
 
 $addon = json_decode((string)file_get_contents($root . '/addon.json'), true);
-if (($addon['version_id'] ?? 0) !== 1020030 || ($addon['version_string'] ?? '') !== '1.2.3')
+$version = (string)($addon['version_string'] ?? '');
+if (!preg_match('/^(\d+)\.(\d+)\.(\d+)$/', $version, $m)
+    || (int)($addon['version_id'] ?? 0) !== ((int)$m[1] * 1000000 + (int)$m[2] * 10000 + (int)$m[3] * 10))
 {
     fwrite(STDERR, "Sürüm metadata hatalı\n");
     exit(1);

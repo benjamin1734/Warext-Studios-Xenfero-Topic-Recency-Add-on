@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<permissions>
-  <permission permission_group_id="wrxtFreshness" permission_id="changeVote" permission_type="flag" interface_group_id="generalPermissions" display_order="910"/>
-  <permission permission_group_id="wrxtFreshness" permission_id="moderate" permission_type="flag" interface_group_id="generalPermissions" display_order="930"/>
-  <permission permission_group_id="wrxtFreshness" permission_id="vote" permission_type="flag" interface_group_id="generalPermissions" display_order="900"/>
-  <permission permission_group_id="wrxtFreshness" permission_id="voteOwn" permission_type="flag" interface_group_id="generalPermissions" display_order="920"/>
-</permissions>

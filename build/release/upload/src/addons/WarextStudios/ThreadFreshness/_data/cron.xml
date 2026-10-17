@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<cron>
-  <entry entry_id="wrxtFreshnessCleanup" cron_class="WarextStudios\ThreadFreshness\Cron\Cleanup" cron_method="run" active="1"><![CDATA[{"day_type":"dom","dom":[-1],"hours":[4],"minutes":[23]}]]></entry>
-  <entry entry_id="wrxtFreshnessRecalculate" cron_class="WarextStudios\ThreadFreshness\Cron\Recalculate" cron_method="run" active="1"><![CDATA[{"day_type":"dom","dom":[-1],"hours":[3],"minutes":[17]}]]></entry>
-</cron>

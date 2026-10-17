@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<routes>
-  <route route_type="admin" route_prefix="thread-freshness" controller="WarextStudios\ThreadFreshness:Dashboard" context="wrxtThreadFreshness"/>
-  <route route_type="public" route_prefix="guncel-cozumler" controller="WarextStudios\ThreadFreshness:Freshness"/>
-</routes>

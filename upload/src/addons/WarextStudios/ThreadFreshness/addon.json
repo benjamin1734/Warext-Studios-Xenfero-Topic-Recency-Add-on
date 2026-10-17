@@ -1,8 +1,8 @@
 {
     "title": "Warext Studios | XenForo Konu Güncellik Sistemi",
     "description": "Destek ve teknik konular için topluluk tabanlı güncellik doğrulama sistemi.",
-    "version_id": 1020030,
-    "version_string": "1.2.3",
+    "version_id": 1020040,
+    "version_string": "1.2.4",
     "dev": "Warext Studios | Support Discord Server",
     "dev_url": "https://discord.gg/tgsV5XMcFS",
     "faq_url": "",
@@ -13,7 +13,7 @@
     "require": {
         "XF": [
             2030070,
-            "XenForo 2.3.0+"
+            "XenForo 2.3.7+"
         ],
         "php": [
             "8.1.0",
