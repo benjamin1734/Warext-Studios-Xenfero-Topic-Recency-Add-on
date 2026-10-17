@@ -6,7 +6,7 @@ Warext Studios Thread Freshness System is a community-driven XenForo 2.3 add-on 
 
 ## Direct XenForo ACP installation
 
-**Ready-to-install ZIP:** `XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.4.zip`
+**Ready-to-install ZIP:** `XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.5.zip`
 
 **Download:** Use the latest package from the [Releases](https://github.com/benjamin1734/Warext-Studios---Konu-Guncellik-Sistemi/releases) page.
 
@@ -52,7 +52,7 @@ The archive installer must be enabled:
 
 ## Installation
 
-Upload `XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.4.zip` through XenForo ACP's archive-based add-on install/upgrade screen.
+Upload `XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.5.zip` through XenForo ACP's archive-based add-on install/upgrade screen.
 
 After installation:
 
@@ -80,7 +80,7 @@ XenForo 2.3 için topluluk tabanlı konu ve çözüm güncellik doğrulama eklen
 
 ## Doğrudan XenForo ACP kurulumu
 
-**Hazır ZIP:** `XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.4.zip`
+**Hazır ZIP:** `XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.5.zip`
 
 **İndirme:** En güncel paketi [Releases](https://github.com/benjamin1734/Warext-Studios---Konu-Guncellik-Sistemi/releases) sayfasından kullanın.
 
@@ -126,7 +126,7 @@ Arşiv kurucusunun açık olması gerekir:
 
 ## Kurulum
 
-`XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.4.zip` paketini XenForo yönetim panelindeki arşivden eklenti kurma/yükseltme ekranından yükleyin.
+`XenForo-ACP-Direct-Install-Warext-Konu-Guncellik-1.2.5.zip` paketini XenForo yönetim panelindeki arşivden eklenti kurma/yükseltme ekranından yükleyin.
 
 Kurulumdan sonra:
 
@@ -151,3 +151,6 @@ Sorularınız, hata bildirimleriniz, kurulum desteği ve Warext Studios XenForo 
 
 
 **Compatibility note:** The declared minimum is XenForo 2.3.7; XenForo 2.3.13 has been checked statically only, not on a licensed live forum.
+
+
+**1.2.5 performance:** Alternative thread suggestions now batch-load candidate threads and forum relations, preserving ranked suggestions and permissions while avoiding per-candidate EntityManager queries.

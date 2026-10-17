@@ -46,6 +46,7 @@ jobs:
         run: |
           php tests/status_calculator.php
           php tests/eligibility.php
+          php tests/alternative_suggestions_batch.php
           php tests/version_summary.php
           php tests/revalidation.php
           php tests/moderator_status.php

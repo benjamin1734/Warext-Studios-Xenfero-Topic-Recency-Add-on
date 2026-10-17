@@ -250,11 +250,30 @@ class ThreadFreshness extends Repository
             [$threadId, max(0, $minDate)]
         );
 
+        if (!$rows)
+        {
+            return [];
+        }
+
+        $candidateIds = array_values(array_unique(array_map(
+            static fn(array $row): int => (int)$row['alternative_thread_id'],
+            $rows
+        )));
+        $threads = $this->finder('XF:Thread')
+            ->where('thread_id', $candidateIds)
+            ->with('Forum')
+            ->fetch();
+        $threadMap = [];
+        foreach ($threads as $thread)
+        {
+            $threadMap[(int)$thread->thread_id] = $thread;
+        }
+
         $sourceThread = $this->em->find('XF:Thread', $threadId);
         $suggestions = [];
         foreach ($rows as $row)
         {
-            $thread = $this->em->find('XF:Thread', (int)$row['alternative_thread_id']);
+            $thread = $threadMap[(int)$row['alternative_thread_id']] ?? null;
             if (
                 !$thread
                 || (int)$thread->thread_id === $threadId
